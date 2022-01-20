@@ -11,9 +11,22 @@
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="https://static.tumblr.com/a0dmjhi/Ka7omax1p/layout.css" />
     <link rel="stylesheet" href="../assets/css/app.css">
+    <link href="http://static.tumblr.com/5omyijl/bzrn2yg7i/style-my-tooltips.css" rel="stylesheet" type="text/css" />
 
     <!-- JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="http://static.tumblr.com/5omyijl/RZtn2yg9v/jquery.style-my-tooltips.js"></script>
+    <script>
+        (function ($) {
+            $(document).ready(function () {
+                $("[title]").style_my_tooltips({
+                    tip_follows_cursor: true,
+                    tip_delay_time: 200,
+                    tip_fade_speed: 300
+                });
+            });
+        })(jQuery);
+    </script>
 </head>
 <body>
     {{!> header}}

@@ -105,12 +105,12 @@ main {
     position: relative;
     width: $main_width;
     margin: auto;
+    display: flex;
 }
 
 section {
     position: relative;
-    width: 50rem;
-    margin-left: 40rem;
+    width: 60vw;
 }
 
 img {
@@ -123,4 +123,41 @@ img {
 figure {
     margin-left:0;
     margin-right:0;
+}
+
+// tooltips
+
+#s-m-t-tooltip {
+    max-width:30rem;
+    margin:1.5rem;
+    padding:0.2rem 0.5rem;
+    border:1px solid $light_gray;
+    border-radius:0;
+    background:$white;
+    color:$black;
+    z-index:999999;
+    font-size:0.8em;
+    font-style:none;
+    letter-spacing:0.01em;
+    font-family:$regular;
+    text-transform:lowercase;
+    box-shadow: 0 0 0 $light_gray;
+}
+ 
+// scrollbar
+
+::-webkit-scrollbar {
+    background-color: $white;
+    height:0.8rem;
+    width:0.3rem;
+}
+ 
+::-webkit-scrollbar-thumb:vertical {
+    background-color: $light_gray;
+    height:5rem;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+    background-color:$white;
+    height:0.8rem !important;
 }

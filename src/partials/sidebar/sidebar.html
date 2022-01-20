@@ -1,11 +1,13 @@
 <aside id="sidebar">
-    {{#if base.sidebar_img}}
-      <img src="{{base.sidebar_img_URL}}" class="sidebar_img" alt=""/>
-    {{/if}}
+    <div class="container">
+      {{#if base.sidebar_img}}
+        <img src="{{base.sidebar_img_URL}}" class="sidebar_img" alt=""/>
+      {{/if}}
 
-    {{> blogTitle tagName="h1"}}
+      {{> blogTitle tagName="h1"}}
 
-    <p class="description">{{base.description}}</p>
-    
-    {{> nav}}
+      <p class="description">{{base.description}}</p>
+      
+      {{> nav}}
+    </div>
 </aside>

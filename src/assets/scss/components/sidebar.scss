@@ -1,15 +1,21 @@
-$sidebar_width: 25rem;
+$sidebar_width: 40vw;
 
 /*----- SIDEBAR -----*/
 
 #sidebar {
     width: $sidebar_width;
-    position: fixed;
-    top: 15rem;
+    padding-right:15rem;
 
     .title {
         font-family:$title; text-align: center;
         a {color:$primary_color;}
+    }
+
+    > .container {
+        position:sticky;
+        top:15rem;
+        margin-left:auto;
+        width:20rem;
     }
 
     .description {text-align: justify;}
